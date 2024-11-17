@@ -22,6 +22,14 @@ header{
     padding: 1rem 0;
     top: 0;
     z-index: 100;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.logo{
+   height: 4rem;
+   mix-blend-mode: multiply;
+   rotate: -25deg;
 }
 
 .header .container{
@@ -69,11 +77,13 @@ a:hover{
     background-color: rgb(227, 227, 227);
     border-radius: 1rem;
     width: 18rem;
-    height: 22rem;
+    height: 23rem;
     margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 .aventuras p{
@@ -134,4 +144,8 @@ footer{
 
 footer .container{
     margin-bottom: 0;
+}
+
+header::-webkit-scrollbar, .aventuras::-webkit-scrollbar{
+    width: thin;
 }
